@@ -1,0 +1,36 @@
+{
+  "runtime": {
+    "version": "v0.7.0",
+    "url": "https://github.com/storytold/wordcraft/releases/download/v0.7.0/wordcraft-0.7.0-windows-x64-portable.zip",
+    "sha256": "e6c8be9bb8ff815ed96974b8a25773d1e476301dcd5b242a267b88347185cc4f",
+    "executable": "wordcraft-cli.exe"
+  },
+  "ciRun": "https://github.com/partme-ai/full-aigc-plugins/actions/runs/38921194883",
+  "observedCommands": {
+    "text.insert": {
+      "id": "text.insert",
+      "label": "Type Text",
+      "location": "Editing",
+      "mutates": true,
+      "params": "{\"text\": string}",
+      "shortcut": ""
+    },
+    "insert.table": {
+      "id": "insert.table",
+      "label": "Table",
+      "location": "Insert › Tables",
+      "mutates": true,
+      "params": "{\"rows\": n, \"cols\": n, \"style\"?: string}",
+      "shortcut": ""
+    },
+    "document.inspect": {
+      "id": "document.inspect",
+      "label": "Inspect Document",
+      "location": "Agents",
+      "mutates": false,
+      "params": "{\"text\"?: bool}",
+      "shortcut": ""
+    }
+  },
+  "sceneAcceptance": "NOT_RUN"
+}
