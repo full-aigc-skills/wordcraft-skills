@@ -1,7 +1,7 @@
 {
   "runtime": "wordcraft-cli 0.7.0 Windows x64",
   "ciRun": "https://github.com/partme-ai/full-aigc-plugins/actions/runs/38921194883",
-  "sceneAcceptance": "NOT_RUN",
+  "sceneAcceptance": "TECHNICAL_PASS_LAYOUT_NOT_RUN",
   "observedCommands": {
     "edit.replaceAll": {
       "id": "edit.replaceAll",
@@ -155,5 +155,34 @@
       "params": "{}",
       "shortcut": "Mod+Enter"
     }
-  }
+  },
+  "technicalRoundtrip": {
+    "ciRun": "https://github.com/partme-ai/full-aigc-plugins/actions/runs/38928803118",
+    "sourceCommit": "b81c0401bed68b52cd569000987a1fad7fa84dbd",
+    "recipes": [
+      "decision-register-table",
+      "letter-header-footer",
+      "project-charter",
+      "release-bullet-notes",
+      "sop-numbered-steps",
+      "term-normalization-draft",
+      "training-exercise-handout",
+      "two-column-brief"
+    ],
+    "stepHashes": {
+      "project-charter": "a9e3617e53b414aba9730b9096a33968281a79c4c5e0fc122a9fd81ef4f064ec",
+      "sop-numbered-steps": "e6a6fda836f57824cade5c0a6f0909caa8269251482b58cfabc6e01031a09d9d",
+      "release-bullet-notes": "3c9f16567a1dadd3887098af8b14f19553caf9d9be11d5ccfa261d0e1487d3a3",
+      "decision-register-table": "780afc39c1bfc79a2cc7eb9d4ad82a80d7df12bae69fb551297070c2f439bc32",
+      "letter-header-footer": "650f0cca06f42e1ad74494a262db581bf92c1f20ae4ce67193f81c79dbd5d02d",
+      "training-exercise-handout": "7154ee3ab33dfee5866e3928de9a8a08b96585c310f38c514677f849efbf7fb2",
+      "term-normalization-draft": "0f1f929c2e8345c7a1f193764b433a3dd67772b4ca4562b7f9d3bac988fff170",
+      "two-column-brief": "1044a368be82e14c9e62daa5a13c3d563d8645c29aa99b4041a64f3d02ebe725"
+    },
+    "input": "fictional examples embedded in recipes.json; replace values for real tasks",
+    "semanticChecks": "PASS",
+    "layoutAcceptance": "NOT_TESTED"
+  },
+  "archiveSha256": "e6c8be9bb8ff815ed96974b8a25773d1e476301dcd5b242a267b88347185cc4f",
+  "executableSha256": "c28bcf13a8960cce781f64fbbaa34233eb356b60f69808e0a265100c15e79e7f"
 }
