@@ -1,0 +1,159 @@
+{
+  "runtime": "wordcraft-cli 0.7.0 Windows x64",
+  "ciRun": "https://github.com/partme-ai/full-aigc-plugins/actions/runs/38921194883",
+  "sceneAcceptance": "NOT_RUN",
+  "observedCommands": {
+    "edit.replaceAll": {
+      "id": "edit.replaceAll",
+      "label": "Replace All",
+      "location": "Home › Editing › Replace",
+      "mutates": true,
+      "params": "{\"text\": string, \"with\": string (^p ^t ^& ^c …; \\\\1 with wildcards), …options of edit.find}",
+      "shortcut": ""
+    },
+    "insert.closeHeader": {
+      "id": "insert.closeHeader",
+      "label": "Close Header and Footer",
+      "location": "Header & Footer",
+      "mutates": false,
+      "params": "{}",
+      "shortcut": ""
+    },
+    "insert.footer": {
+      "id": "insert.footer",
+      "label": "Footer",
+      "location": "Insert › Header & Footer",
+      "mutates": true,
+      "params": "{\"text\"?: string, \"preset\"?: \"blank|blankThree|pageNumber\"}",
+      "shortcut": ""
+    },
+    "insert.header": {
+      "id": "insert.header",
+      "label": "Header",
+      "location": "Insert › Header & Footer",
+      "mutates": true,
+      "params": "{\"text\"?: string, \"preset\"?: \"blank|blankThree|title\"}",
+      "shortcut": ""
+    },
+    "layout.columns": {
+      "id": "layout.columns",
+      "label": "Columns",
+      "location": "Layout › Page Setup",
+      "mutates": true,
+      "params": "{\"count\": 1-12, \"space\"?: pt, \"separator\"?: bool, \"preset\"?: \"left|right\", \"widths\"?: [[width pt, space after pt], …] (unequal columns; sets the count), \"apply\"?: \"section|document|forward\"}",
+      "shortcut": ""
+    },
+    "layout.margins": {
+      "id": "layout.margins",
+      "label": "Margins",
+      "location": "Layout › Page Setup",
+      "mutates": true,
+      "params": "{\"preset\"?: \"normal|narrow|moderate|wide|mirrored|office2003\", \"top\"?: pt, \"bottom\"?: pt, \"left\"?: pt, \"right\"?: pt, \"gutter\"?: pt}",
+      "shortcut": ""
+    },
+    "layout.orientation": {
+      "id": "layout.orientation",
+      "label": "Orientation",
+      "location": "Layout › Page Setup",
+      "mutates": true,
+      "params": "{\"value\": \"portrait|landscape\"}",
+      "shortcut": ""
+    },
+    "layout.size": {
+      "id": "layout.size",
+      "label": "Size",
+      "location": "Layout › Page Setup",
+      "mutates": true,
+      "params": "{\"name\"?: \"Letter|Legal|A4|…\", \"width\"?: pt, \"height\"?: pt}",
+      "shortcut": ""
+    },
+    "para.bullets": {
+      "id": "para.bullets",
+      "label": "Bullets",
+      "location": "Home › Paragraph",
+      "mutates": true,
+      "params": "{\"kind\"?: \"bullet\" | single char, \"off\"?: bool}",
+      "shortcut": "Mod+Shift+L"
+    },
+    "para.heading1": {
+      "id": "para.heading1",
+      "label": "Heading 1",
+      "location": "Home › Styles",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Mod+Alt+1"
+    },
+    "para.normal": {
+      "id": "para.normal",
+      "label": "Normal Style",
+      "location": "Home › Styles",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Mod+Shift+N"
+    },
+    "para.numbering": {
+      "id": "para.numbering",
+      "label": "Numbering",
+      "location": "Home › Paragraph",
+      "mutates": true,
+      "params": "{\"kind\"?: \"numbered|numberedParen|upperLetter|lowerLetter|lowerRoman|outline\", \"off\"?: bool}",
+      "shortcut": ""
+    },
+    "select.all": {
+      "id": "select.all",
+      "label": "Select All",
+      "location": "Home › Editing › Select",
+      "mutates": false,
+      "params": "{}",
+      "shortcut": "Mod+A"
+    },
+    "table.autofit": {
+      "id": "table.autofit",
+      "label": "AutoFit",
+      "location": "Table Layout › Cell Size",
+      "mutates": true,
+      "params": "{\"mode\": \"contents|window|fixed\"}",
+      "shortcut": ""
+    },
+    "table.fromText": {
+      "id": "table.fromText",
+      "label": "Convert Text to Table",
+      "location": "Insert › Tables",
+      "mutates": true,
+      "params": "{\"separator\"?: \"tab|comma\"}",
+      "shortcut": ""
+    },
+    "table.repeatHeader": {
+      "id": "table.repeatHeader",
+      "label": "Repeat Header Rows",
+      "location": "Table Layout › Data",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": ""
+    },
+    "text.insert": {
+      "id": "text.insert",
+      "label": "Type Text",
+      "location": "Editing",
+      "mutates": true,
+      "params": "{\"text\": string}",
+      "shortcut": ""
+    },
+    "text.newParagraph": {
+      "id": "text.newParagraph",
+      "label": "New Paragraph",
+      "location": "Editing",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Enter"
+    },
+    "text.pageBreak": {
+      "id": "text.pageBreak",
+      "label": "Page Break",
+      "location": "Insert › Pages",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Mod+Enter"
+    }
+  }
+}
