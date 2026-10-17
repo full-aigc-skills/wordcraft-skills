@@ -1,7 +1,7 @@
 {
   "runtime": "wordcraft-cli 0.7.0 Windows x64",
   "catalogCiRun": 38995872602,
-  "acceptance": "NOT_RUN",
+  "acceptance": "SAMPLE_DOCX_PDF_TECHNICAL_AND_VISUAL_PASS",
   "observedCommands": {
     "layout.size": {
       "id": "layout.size",
@@ -139,5 +139,14 @@
       "params": "{\"extend\"?: bool}",
       "shortcut": "Mod+Up / Alt+Up"
     }
+  },
+  "technicalRoundtrip": {
+    "ciRun": "https://github.com/partme-ai/full-aigc-plugins/actions/runs/38997182436",
+    "sourceCommit": "d3cdeaa9c948f1f2de582d4637a4d373025da88f",
+    "input": "examples/input.json; fictional, replace for real use",
+    "stepsSha256": "3d7864b311f1e1ed5be4d07add3f78c67aef196ccc1a2f76a9599d497d1fa542",
+    "docx": "reopened text, heading levels, exact table cells and columns PASS",
+    "pdf": "converted and all six sample pages rendered and visually reviewed",
+    "scope": "six supplied examples; arbitrary long input and host UI synchronization not accepted by this run"
   }
 }

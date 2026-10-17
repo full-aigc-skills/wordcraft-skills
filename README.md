@@ -21,4 +21,4 @@
 | 验收报告 | [wordcraft-acceptance-report](skills/wordcraft-acceptance-report/SKILL.md) |
 | 业务函 | [wordcraft-business-letter](skills/wordcraft-business-letter/SKILL.md) |
 
-每种有独立的填写指南、虚构输入示例和可编辑表格。DOCX/PDF实际回归与页面审阅结果另行记录；目录存在不代表生成质量已验收。
+每种有独立的填写指南、虚构输入示例和可编辑表格。六份示例已通过Windows实际DOCX/PDF生成、重开与页面审阅，见[验证范围](docs/document-templates-validation.md)。长文档与真实宿主同步另行验证。
