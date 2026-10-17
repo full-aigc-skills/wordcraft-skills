@@ -22,3 +22,7 @@
 | 业务函 | [wordcraft-business-letter](skills/wordcraft-business-letter/SKILL.md) |
 
 每种有独立的填写指南、虚构输入示例和可编辑表格。六份示例已通过Windows实际DOCX/PDF生成、重开与页面审阅，见[验证范围](docs/document-templates-validation.md)。长文档与真实宿主同步另行验证。
+
+## main开发候选指导
+
+新增[main工作流](skills/wordcraft-scenario-playbooks/references/main-workflows.md)：原生页眉页脚、筛选排序邮件合并，以及12个新增命令和27处参数变化。以固定main实际目录为依据，两个新流程的专项业务回归尚待完成；不计入已有8条手册通过数，不宣称稳定版支持。
