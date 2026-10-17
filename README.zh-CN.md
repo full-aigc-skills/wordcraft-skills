@@ -7,3 +7,18 @@
 ## 场景操作手册
 
 新增 `wordcraft-scenario-playbooks`：8 条带具体命令、参数与检查的流程，见 [技能入口](skills/wordcraft-scenario-playbooks/SKILL.md)。示例数据需替换，实际运行与创作效果状态见命令证据；不将目录存在当验收通过。
+
+## 常用文档模板
+
+首批六类模板，按文档任务直接选择；2个既有技能增强，新增4个独立入口。模板是章节、填字段指导和原生排版操作，不是只换标题的空提纲。
+
+| 文档 | 技能 |
+| --- | --- |
+| 会议纪要 | [wordcraft-meeting-minutes](skills/wordcraft-meeting-minutes/SKILL.md) |
+| 工作周报 | [wordcraft-weekly-report](skills/wordcraft-weekly-report/SKILL.md) |
+| 项目方案 | [wordcraft-business-proposal](skills/wordcraft-business-proposal/SKILL.md) |
+| 需求说明 | [wordcraft-requirements-document](skills/wordcraft-requirements-document/SKILL.md) |
+| 验收报告 | [wordcraft-acceptance-report](skills/wordcraft-acceptance-report/SKILL.md) |
+| 业务函 | [wordcraft-business-letter](skills/wordcraft-business-letter/SKILL.md) |
+
+每种有独立的填写指南、虚构输入示例和可编辑表格。DOCX/PDF实际回归与页面审阅结果另行记录；目录存在不代表生成质量已验收。

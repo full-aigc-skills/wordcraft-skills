@@ -1,0 +1,135 @@
+{
+  "runtime": "wordcraft-cli 0.7.0 Windows x64",
+  "catalogCiRun": 38995872602,
+  "acceptance": "NOT_RUN",
+  "observedCommands": {
+    "layout.size": {
+      "id": "layout.size",
+      "label": "Size",
+      "location": "Layout › Page Setup",
+      "mutates": true,
+      "params": "{\"name\"?: \"Letter|Legal|A4|…\", \"width\"?: pt, \"height\"?: pt}",
+      "shortcut": ""
+    },
+    "layout.margins": {
+      "id": "layout.margins",
+      "label": "Margins",
+      "location": "Layout › Page Setup",
+      "mutates": true,
+      "params": "{\"preset\"?: \"normal|narrow|moderate|wide|mirrored|office2003\", \"top\"?: pt, \"bottom\"?: pt, \"left\"?: pt, \"right\"?: pt, \"gutter\"?: pt}",
+      "shortcut": ""
+    },
+    "para.heading1": {
+      "id": "para.heading1",
+      "label": "Heading 1",
+      "location": "Home › Styles",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Mod+Alt+1"
+    },
+    "para.alignCenter": {
+      "id": "para.alignCenter",
+      "label": "Center",
+      "location": "Home › Paragraph",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Mod+E"
+    },
+    "text.insert": {
+      "id": "text.insert",
+      "label": "Type Text",
+      "location": "Editing",
+      "mutates": true,
+      "params": "{\"text\": string}",
+      "shortcut": ""
+    },
+    "text.newParagraph": {
+      "id": "text.newParagraph",
+      "label": "New Paragraph",
+      "location": "Editing",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Enter"
+    },
+    "para.normal": {
+      "id": "para.normal",
+      "label": "Normal Style",
+      "location": "Home › Styles",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Mod+Shift+N"
+    },
+    "para.alignLeft": {
+      "id": "para.alignLeft",
+      "label": "Align Left",
+      "location": "Home › Paragraph",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Mod+L"
+    },
+    "para.heading2": {
+      "id": "para.heading2",
+      "label": "Heading 2",
+      "location": "Home › Styles",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Mod+Alt+2"
+    },
+    "select.text": {
+      "id": "select.text",
+      "label": "Select Text",
+      "location": "Navigation",
+      "mutates": false,
+      "params": "{\"text\": string, \"occurrence\"?: n}",
+      "shortcut": ""
+    },
+    "table.fromText": {
+      "id": "table.fromText",
+      "label": "Convert Text to Table",
+      "location": "Insert › Tables",
+      "mutates": true,
+      "params": "{\"separator\"?: \"tab|comma\"}",
+      "shortcut": ""
+    },
+    "table.autofit": {
+      "id": "table.autofit",
+      "label": "AutoFit",
+      "location": "Table Layout › Cell Size",
+      "mutates": true,
+      "params": "{\"mode\": \"contents|window|fixed\"}",
+      "shortcut": ""
+    },
+    "table.repeatHeader": {
+      "id": "table.repeatHeader",
+      "label": "Repeat Header Rows",
+      "location": "Table Layout › Data",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": ""
+    },
+    "table.selectTable": {
+      "id": "table.selectTable",
+      "label": "Select Table",
+      "location": "Table Layout › Table › Select",
+      "mutates": false,
+      "params": "{}",
+      "shortcut": ""
+    },
+    "table.borders": {
+      "id": "table.borders",
+      "label": "Borders",
+      "location": "Table Design › Borders",
+      "mutates": true,
+      "params": "{\"kind\": \"all|outside|inside|none|top|bottom|left|right\", \"width\"?: pt, \"color\"?: \"RRGGBB\"}",
+      "shortcut": ""
+    },
+    "table.look": {
+      "id": "table.look",
+      "label": "Table Style Options",
+      "location": "Table Design › Table Style Options",
+      "mutates": true,
+      "params": "{\"headerRow\"?: bool, \"totalRow\"?: bool, \"bandedRows\"?: bool, \"firstColumn\"?: bool, \"lastColumn\"?: bool, \"bandedColumns\"?: bool}",
+      "shortcut": ""
+    }
+  }
+}
