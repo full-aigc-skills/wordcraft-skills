@@ -318,5 +318,7 @@
   "upstreamCommit": "eae242176108d328c5dd81fbc10370c51ab90706",
   "observedNativeRun": 39006638202,
   "baseline": "official v0.7.0 observed native commands; not embedded editor catalog",
-  "runtimeValidation": "command catalog observed; two new workflow checks pending"
+  "runtimeValidation": "two main workflows PASS on Windows native CLI; installed host sync NOT_TESTED",
+  "mainWorkflowRun": 39007814128,
+  "validatedSkillsCommit": "5867872"
 }
