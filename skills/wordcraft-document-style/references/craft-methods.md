@@ -6,8 +6,9 @@
 | --- | --- | --- |
 | 1. 读取已有样式，避免重复造同义样式 | `styles.list` | `{}` |
 | 2. 定位当前选区的样式 | `styles.inspect` | `{}` |
-| 3. 对选中正文应用统一样式 | `para.style` | `{"style":"Normal"}` |
-| 4. 复核结构 | `document.inspect` | `{"text":true}` |
+| 3. 定位已确认正文；按当前输入替换，匹配失败不得继续套样式 | `select.text` | `{"text":"正文待统一","occurrence":0}` |
+| 4. 对选中正文应用统一样式 | `para.style` | `{"style":"Normal"}` |
+| 5. 复核结构 | `document.inspect` | `{"text":true}` |
 
 ## 如何调用
 
@@ -25,7 +26,7 @@ wordcraft-cli run --file input.docx --cmd 'text.insert={"text":"正文"}' --save
 
 标题、正文、图注样式一致，局部强调不被误清除。
 
-边界：先记录选区范围；只对明确正文应用，不全选把标题一并变正文。
+边界：把select.text替换为真实正文中的唯一短语，先确认选中范围且仅含正文；不全选归一标题，不清除未授权的字符强调。
 
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 

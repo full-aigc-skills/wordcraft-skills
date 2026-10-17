@@ -23,6 +23,14 @@
       "params": "{\"preset\"?: \"normal|narrow|moderate|wide|mirrored|office2003\", \"top\"?: pt, \"bottom\"?: pt, \"left\"?: pt, \"right\"?: pt, \"gutter\"?: pt}",
       "shortcut": ""
     },
+    "para.style": {
+      "id": "para.style",
+      "label": "Apply Style",
+      "location": "Home › Styles",
+      "mutates": true,
+      "params": "{\"style\": string (name or id)}",
+      "shortcut": ""
+    },
     "text.insert": {
       "id": "text.insert",
       "label": "Type Text",
@@ -30,6 +38,14 @@
       "mutates": true,
       "params": "{\"text\": string}",
       "shortcut": ""
+    },
+    "text.newParagraph": {
+      "id": "text.newParagraph",
+      "label": "New Paragraph",
+      "location": "Editing",
+      "mutates": true,
+      "params": "{}",
+      "shortcut": "Enter"
     },
     "document.inspect": {
       "id": "document.inspect",

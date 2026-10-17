@@ -4,11 +4,36 @@
 
 | 顺序与目的 | 实际方法 | 参数例子 |
 | --- | --- | --- |
-| 1. 设定页面与边距 | `layout.margins` | `{"preset":"normal"}` |
-| 2. 创建章节标题 | `para.style` | `{"style":"Heading 1"}` |
-| 3. 输入研究主题 | `text.insert` | `{"text":"研究问题与证据"}` |
-| 4. 检查全文与页数结构 | `document.inspect` | `{"text":true}` |
-| 5. 列出拼写问题供判断 | `review.issues` | `{}` |
+| 1. 设置页面边距 | `layout.margins` | `{"preset":"normal"}` |
+| 2. 应用本段语义样式 | `para.style` | `{"style":"Heading 1"}` |
+| 3. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"研究问题与证据"}` |
+| 4. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 5. 应用本段语义样式 | `para.style` | `{"style":"Heading 2"}` |
+| 6. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"问题与范围"}` |
+| 7. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 8. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 9. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"研究问题、时间范围与对象：待核实"}` |
+| 10. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 11. 应用本段语义样式 | `para.style` | `{"style":"Heading 2"}` |
+| 12. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"来源与证据"}` |
+| 13. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 14. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 15. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"来源名称、链接、日期和支持的事实：待核实"}` |
+| 16. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 17. 应用本段语义样式 | `para.style` | `{"style":"Heading 2"}` |
+| 18. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"分析与推断"}` |
+| 19. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 20. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 21. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"推断依据、反例与限制：待核实"}` |
+| 22. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 23. 应用本段语义样式 | `para.style` | `{"style":"Heading 2"}` |
+| 24. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"结论与未验证项"}` |
+| 25. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 26. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 27. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"已支持结论及仍需验证事项：待核实"}` |
+| 28. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 29. 核对章节结构与正文 | `document.inspect` | `{"text":true}` |
+| 30. 列出语言问题；不当作事实核查 | `review.issues` | `{}` |
 
 ## 如何调用
 
@@ -26,7 +51,7 @@ wordcraft-cli run --file input.docx --cmd 'text.insert={"text":"正文"}' --save
 
 引文、表题、页码和章节对应，结论区分事实、推断与未验证项。
 
-边界：review.issues不是事实核查；缺少来源不能用自动语言检查代替。
+边界：review.issues不是事实核查；缺少来源不能用自动语言检查代替。 示例章节为结构起点，待核实字段不能当作已填文档交付；每个章节用真实段落与Heading样式。
 
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 

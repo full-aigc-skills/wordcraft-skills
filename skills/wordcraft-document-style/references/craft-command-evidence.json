@@ -23,6 +23,14 @@
       "params": "{}",
       "shortcut": ""
     },
+    "select.text": {
+      "id": "select.text",
+      "label": "Select Text",
+      "location": "Navigation",
+      "mutates": false,
+      "params": "{\"text\": string, \"occurrence\"?: n}",
+      "shortcut": ""
+    },
     "para.style": {
       "id": "para.style",
       "label": "Apply Style",

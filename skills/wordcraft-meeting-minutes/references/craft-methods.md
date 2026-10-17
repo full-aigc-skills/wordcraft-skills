@@ -4,9 +4,34 @@
 
 | 顺序与目的 | 实际方法 | 参数例子 |
 | --- | --- | --- |
-| 1. 插入会议基本信息与决定 | `text.insert` | `{"text":"会议时间：待核实\n参会人：待核实\n决定：\n行动项："}` |
-| 2. 插入行动项表格 | `insert.table` | `{"rows":3,"cols":4}` |
-| 3. 核对全文结构 | `document.inspect` | `{"text":true}` |
+| 1. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 2. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"会议时间：待核实"}` |
+| 3. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 4. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 5. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"参会人：待核实"}` |
+| 6. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 7. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 8. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"讨论建议：待核实"}` |
+| 9. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 10. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 11. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"决定：待确认（非已决议）"}` |
+| 12. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 13. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 14. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"行动项："}` |
+| 15. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 16. 填写表格一行，单元格内不得含制表或换行 | `text.insert` | `{"text":"行动项\t责任人\t截止时间\t状态"}` |
+| 17. 真实段落分隔表格行 | `text.newParagraph` | `{}` |
+| 18. 填写表格一行，单元格内不得含制表或换行 | `text.insert` | `{"text":"待确认事项\t待确认\t待确认\t未确认"}` |
+| 19. 真实段落分隔表格行 | `text.newParagraph` | `{}` |
+| 20. 填写表格一行，单元格内不得含制表或换行 | `text.insert` | `{"text":"待补充事项\t待确认\t待确认\t未确认"}` |
+| 21. 从末尾定位连续表格文本 | `caret.docEnd` | `{"extend":false}` |
+| 22. 向上扩选一行表格文本 | `caret.paraUp` | `{"extend":true}` |
+| 23. 向上扩选一行表格文本 | `caret.paraUp` | `{"extend":true}` |
+| 24. 向上扩选一行表格文本 | `caret.paraUp` | `{"extend":true}` |
+| 25. 将选中的多段文本转为原生可编辑表格 | `table.fromText` | `{"separator":"tab"}` |
+| 26. 表格适合页面 | `table.autofit` | `{"mode":"window"}` |
+| 27. 跨页重复表头 | `table.repeatHeader` | `{}` |
+| 28. 核对全文与表格 | `document.inspect` | `{"text":true}` |
 
 ## 如何调用
 
@@ -24,7 +49,7 @@ wordcraft-cli run --file input.docx --cmd 'text.insert={"text":"正文"}' --save
 
 区分讨论、决定和待办，行动项包含责任人、截止时间与状态。
 
-边界：不得把讨论建议写成已达成决议；逐格填表需要当前table/cell选择。
+边界：所有待核实/待确认占位按实际会议替换；示例两项不代表真实决定。每行必须用text.newParagraph，不能用软换行；仅扩选刚插入的表格行。已有文档应先定位新空段落再插入。
 
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 

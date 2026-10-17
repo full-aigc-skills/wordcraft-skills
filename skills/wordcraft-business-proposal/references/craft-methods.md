@@ -5,11 +5,33 @@
 | 顺序与目的 | 实际方法 | 参数例子 |
 | --- | --- | --- |
 | 1. 设置页面基本规格 | `layout.size` | `{"name":"A4"}` |
-| 2. 应用一级标题样式后写入标题 | `para.style` | `{"style":"Heading 1"}` |
-| 3. 写入方案标题 | `text.insert` | `{"text":"业务方案"}` |
-| 4. 另起正文段落 | `text.newParagraph` | `{}` |
-| 5. 恢复正文样式 | `para.style` | `{"style":"Normal"}` |
-| 6. 写入目标、方案、成本与验收 | `text.insert` | `{"text":"目标\n方案与边界\n成本依据\n验收方式"}` |
+| 2. 应用本段语义样式 | `para.style` | `{"style":"Heading 1"}` |
+| 3. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"业务方案"}` |
+| 4. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 5. 应用本段语义样式 | `para.style` | `{"style":"Heading 2"}` |
+| 6. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"目标"}` |
+| 7. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 8. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 9. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"目标与衡量方式：待核实"}` |
+| 10. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 11. 应用本段语义样式 | `para.style` | `{"style":"Heading 2"}` |
+| 12. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"方案与边界"}` |
+| 13. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 14. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 15. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"实施范围、非目标与责任人：待核实"}` |
+| 16. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 17. 应用本段语义样式 | `para.style` | `{"style":"Heading 2"}` |
+| 18. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"成本依据"}` |
+| 19. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 20. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 21. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"金额、币种、来源与估算日期：待核实"}` |
+| 22. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 23. 应用本段语义样式 | `para.style` | `{"style":"Heading 2"}` |
+| 24. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"验收方式"}` |
+| 25. 创建真实段落边界 | `text.newParagraph` | `{}` |
+| 26. 应用本段语义样式 | `para.style` | `{"style":"Normal"}` |
+| 27. 输入已核实内容或明确待确认占位 | `text.insert` | `{"text":"交付项、检查方式与验收人：待核实"}` |
+| 28. 创建真实段落边界 | `text.newParagraph` | `{}` |
 
 ## 如何调用
 
@@ -27,7 +49,7 @@ wordcraft-cli run --file input.docx --cmd 'text.insert={"text":"正文"}' --save
 
 标题样式可生成目录，方案中的承诺、数字、版本和责任人一致。
 
-边界：样式名需由 styles.list 确认；英文内置名在当前运行时不一定等于界面本地化名称。
+边界：样式名需由 styles.list 确认；英文内置名在当前运行时不一定等于界面本地化名称。 示例章节为结构起点，待核实字段不能当作已填文档交付；每个章节用真实段落与Heading样式。
 
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 

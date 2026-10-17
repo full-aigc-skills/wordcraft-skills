@@ -30,3 +30,5 @@ wordcraft-cli run --file input.docx --cmd 'text.insert={"text":"正文"}' --save
 保存可编辑工程后由新进程或重新打开的同一宿主会话核对；导出格式单独解码/查看。方法存在和零退出不代表本场景已经完成。
 
 工作流来源与许可见 [workflow-sources.json](workflow-sources.json)。仅借鉴事实与方法，本文与参数例子原创编写。
+
+当前0.7.0命令目录明确：moves、headersFooters、footnotes等开关虽接受但尚未实现；不得据此承诺覆盖这些差异。比较后保存新文件，检查原生插入/删除修订及两个输入均未改写。
