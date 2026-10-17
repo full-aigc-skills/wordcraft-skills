@@ -25,3 +25,7 @@
 | `text.newParagraph` | `{}` |
 
 执行顺序见[示例原生步骤](craft-steps.json)。段落必须用text.newParagraph，不能软换行；每一表格行先写制表分隔文本，再按行数caret.paraUp扩选，table.fromText转换。保留表头重复、窗口适配和原生表格边框。只操作新文档，不能把这个选择逻辑套在用户已有正文上。
+
+## 长明细和分页
+
+在新建空文档中，table.fromText生成的表格块索引由其前方实际text.newParagraph数量推导。select.range使用Pos结构 `{"story":"body","path":[表格块,行,列,0],"off":0}`，anchor与focus相同以定位单元格。逐行调用table.properties `{"allowBreak":false}`，不能仅全选表格调用一次（该命令只设置光标所在行）。随后逐列table.columnWidth设置250/45/75/81pt；数值列table.selectColumn后使用para.align `{"value":"right"}`，避免有状态快捷命令切换回左对齐。共享宿主须核对select.range实际回执，遇到位置钳制或非空文档立即停止。保存重开验证全部行的cantSplit、列宽和数值单元格对齐。

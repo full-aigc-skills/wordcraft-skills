@@ -37,21 +37,13 @@
       "params": "{\"name\"?: \"Letter|Legal|A4|…\", \"width\"?: pt, \"height\"?: pt}",
       "shortcut": ""
     },
-    "para.alignCenter": {
-      "id": "para.alignCenter",
-      "label": "Center",
+    "para.align": {
+      "id": "para.align",
+      "label": "Alignment",
       "location": "Home › Paragraph",
       "mutates": true,
-      "params": "{}",
-      "shortcut": "Mod+E"
-    },
-    "para.alignLeft": {
-      "id": "para.alignLeft",
-      "label": "Align Left",
-      "location": "Home › Paragraph",
-      "mutates": true,
-      "params": "{}",
-      "shortcut": "Mod+L"
+      "params": "{\"value\": \"left|center|right|justify|distribute (as seen on the page) | start|end (reading direction)\"}",
+      "shortcut": ""
     },
     "para.heading1": {
       "id": "para.heading1",
@@ -77,6 +69,14 @@
       "params": "{}",
       "shortcut": "Mod+Shift+N"
     },
+    "select.range": {
+      "id": "select.range",
+      "label": "Select Range",
+      "location": "Navigation",
+      "mutates": false,
+      "params": "{\"anchor\": Pos, \"focus\": Pos}",
+      "shortcut": ""
+    },
     "table.autofit": {
       "id": "table.autofit",
       "label": "AutoFit",
@@ -91,6 +91,14 @@
       "location": "Table Design › Borders",
       "mutates": true,
       "params": "{\"kind\": \"all|outside|inside|none|top|bottom|left|right\", \"width\"?: pt, \"color\"?: \"RRGGBB\"}",
+      "shortcut": ""
+    },
+    "table.columnWidth": {
+      "id": "table.columnWidth",
+      "label": "Table Column Width",
+      "location": "Table Layout › Cell Size",
+      "mutates": true,
+      "params": "{\"width\": pt} (the caret cell's column; the table's preferred width is cleared so the column gets exactly this)",
       "shortcut": ""
     },
     "table.fromText": {
@@ -109,11 +117,27 @@
       "params": "{\"headerRow\"?: bool, \"totalRow\"?: bool, \"bandedRows\"?: bool, \"firstColumn\"?: bool, \"lastColumn\"?: bool, \"bandedColumns\"?: bool}",
       "shortcut": ""
     },
+    "table.properties": {
+      "id": "table.properties",
+      "label": "Properties",
+      "location": "Table Layout › Table",
+      "mutates": true,
+      "params": "{\"align\"?: \"left|center|right\", \"rtl\"?: bool, \"width\"?: pt|null, \"widthPct\"?: percent, \"indent\"?: pt, \"rowHeight\"?: pt|null, \"rowHeightRule\"?: \"atLeast|exact\", \"allowBreak\"?: bool, \"headerRow\"?: bool, \"columnWidth\"?: pt, \"cellWidth\"?: pt|null, \"valign\"?: \"top|center|bottom\"} (row, column and cell settings apply to the caret's; without settings it returns the current ones)",
+      "shortcut": ""
+    },
     "table.repeatHeader": {
       "id": "table.repeatHeader",
       "label": "Repeat Header Rows",
       "location": "Table Layout › Data",
       "mutates": true,
+      "params": "{}",
+      "shortcut": ""
+    },
+    "table.selectColumn": {
+      "id": "table.selectColumn",
+      "label": "Select Column",
+      "location": "Table Layout › Table › Select",
+      "mutates": false,
       "params": "{}",
       "shortcut": ""
     },

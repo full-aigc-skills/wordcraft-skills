@@ -9,319 +9,337 @@
       "params": {
         "name": "A4"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "layout.margins",
       "params": {
         "preset": "normal"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.heading1",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignCenter",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "center"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "商业报价单 Q-2026-001"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.normal",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignLeft",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "left"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "日期：2026-10-18    编写：示例设计工作室"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.heading2",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignLeft",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "left"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "报价对象"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.normal",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignLeft",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "left"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "报价方：示例设计工作室；客户：示例客户"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.heading2",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignLeft",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "left"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "计价口径"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.normal",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignLeft",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "left"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "CNY；按提供单价计算，税费口径待双方确认"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.heading2",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignLeft",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "left"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "有效期与交付约定"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.normal",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignLeft",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "left"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "有效期至：2026-11-01；交付项目源文件，验收范围按项目说明确认。"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.heading2",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
-      "command": "para.alignLeft",
-      "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "command": "para.align",
+      "params": {
+        "value": "left"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "报价明细"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "para.normal",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "项目\t数量\t单价\t金额"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "主视觉设计\t2\t1250.10\t2500.20"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "尺寸适配\t3\t80.20\t240.60"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.newParagraph",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "text.insert",
       "params": {
         "text": "合计（CNY）\t\t\t2740.80"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "caret.docEnd",
       "params": {
         "extend": false
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "caret.paraUp",
       "params": {
         "extend": true
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "caret.paraUp",
       "params": {
         "extend": true
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "caret.paraUp",
       "params": {
         "extend": true
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "caret.paraUp",
       "params": {
         "extend": true
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "table.fromText",
       "params": {
         "separator": "tab"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "table.autofit",
       "params": {
         "mode": "window"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "table.repeatHeader",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "table.selectTable",
       "params": {},
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "table.borders",
@@ -330,7 +348,7 @@
         "width": 0.5,
         "color": "D5DBE5"
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
     },
     {
       "command": "table.look",
@@ -338,7 +356,307 @@
         "headerRow": true,
         "bandedRows": true
       },
-      "purpose": "按报价数据构建原生文档"
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "select.range",
+      "params": {
+        "anchor": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            0,
+            0
+          ],
+          "off": 0
+        },
+        "focus": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            0,
+            0
+          ],
+          "off": 0
+        }
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.properties",
+      "params": {
+        "allowBreak": false
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "select.range",
+      "params": {
+        "anchor": {
+          "story": "body",
+          "path": [
+            9,
+            1,
+            0,
+            0
+          ],
+          "off": 0
+        },
+        "focus": {
+          "story": "body",
+          "path": [
+            9,
+            1,
+            0,
+            0
+          ],
+          "off": 0
+        }
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.properties",
+      "params": {
+        "allowBreak": false
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "select.range",
+      "params": {
+        "anchor": {
+          "story": "body",
+          "path": [
+            9,
+            2,
+            0,
+            0
+          ],
+          "off": 0
+        },
+        "focus": {
+          "story": "body",
+          "path": [
+            9,
+            2,
+            0,
+            0
+          ],
+          "off": 0
+        }
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.properties",
+      "params": {
+        "allowBreak": false
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "select.range",
+      "params": {
+        "anchor": {
+          "story": "body",
+          "path": [
+            9,
+            3,
+            0,
+            0
+          ],
+          "off": 0
+        },
+        "focus": {
+          "story": "body",
+          "path": [
+            9,
+            3,
+            0,
+            0
+          ],
+          "off": 0
+        }
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.properties",
+      "params": {
+        "allowBreak": false
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "select.range",
+      "params": {
+        "anchor": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            0,
+            0
+          ],
+          "off": 0
+        },
+        "focus": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            0,
+            0
+          ],
+          "off": 0
+        }
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.columnWidth",
+      "params": {
+        "width": 250
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "select.range",
+      "params": {
+        "anchor": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            1,
+            0
+          ],
+          "off": 0
+        },
+        "focus": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            1,
+            0
+          ],
+          "off": 0
+        }
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.columnWidth",
+      "params": {
+        "width": 45
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.selectColumn",
+      "params": {},
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "para.align",
+      "params": {
+        "value": "right"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "select.range",
+      "params": {
+        "anchor": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            2,
+            0
+          ],
+          "off": 0
+        },
+        "focus": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            2,
+            0
+          ],
+          "off": 0
+        }
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.columnWidth",
+      "params": {
+        "width": 75
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.selectColumn",
+      "params": {},
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "para.align",
+      "params": {
+        "value": "right"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "select.range",
+      "params": {
+        "anchor": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            3,
+            0
+          ],
+          "off": 0
+        },
+        "focus": {
+          "story": "body",
+          "path": [
+            9,
+            0,
+            3,
+            0
+          ],
+          "off": 0
+        }
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.columnWidth",
+      "params": {
+        "width": 81
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "table.selectColumn",
+      "params": {},
+      "purpose": "根据报价输入构建并控制原生表格分页"
+    },
+    {
+      "command": "para.align",
+      "params": {
+        "value": "right"
+      },
+      "purpose": "根据报价输入构建并控制原生表格分页"
     }
   ],
   "check": "逐项重算，核对原生四列表格、总额与重开后数据；逐页审阅",

@@ -37,4 +37,11 @@ class QuotationTests(unittest.TestCase):
             root=Path(t);source=root/'input.json';self.data['expected_total']='0.00';source.write_text(json.dumps(self.data));out=root/'steps.json'
             result=subprocess.run([sys.executable,str(HOME/'scripts/quotation.py'),'--input',str(source),'--output',str(out),'--save',str(root/'result.docx'),'--cli','nonexistent'],capture_output=True,text=True)
             self.assertNotEqual(result.returncode,0);self.assertFalse(out.exists());self.assertFalse((root/'result.docx').exists())
+    def test_every_row_has_explicit_break_protection_and_numeric_alignment(self):
+        p=m.compile_quote(self.data)
+        protected=[s for s in p['steps'] if s['command']=='table.properties' and s['params'].get('allowBreak') is False]
+        self.assertEqual(len(protected),4)
+        widths=[s['params']['width'] for s in p['steps'] if s['command']=='table.columnWidth']
+        self.assertEqual(widths,[250,45,75,81])
+        self.assertEqual(sum(s['command']=='para.align' and s['params'].get('value')=='right' for s in p['steps']),3)
 if __name__=='__main__':unittest.main()

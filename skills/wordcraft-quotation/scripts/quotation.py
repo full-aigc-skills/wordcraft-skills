@@ -45,6 +45,25 @@ def compile_quote(data):
     spec=importlib.util.spec_from_file_location('quote_template',HOME/'scripts/render_document_template.py')
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
     plan=module.compile_template(json.loads((HOME/'assets/template.json').read_text(encoding='utf-8')),values)
+    steps=plan['steps']
+    # 只用于本脚本新建的空文档；表格位置由转换前的真实段落数量推导。
+    first_table_line=next(i for i,step in enumerate(steps) if step['command']=='text.insert' and '\t' in step['params']['text'])
+    table_block=sum(step['command']=='text.newParagraph' for step in steps[:first_table_line])
+    for step in steps:
+        if step['command'] in ('para.alignLeft','para.alignCenter'):
+            step['params']={'value':'left' if step['command']=='para.alignLeft' else 'center'}
+            step['command']='para.align'
+    def select_cell(row,column):
+        pos={'story':'body','path':[table_block,row,column,0],'off':0}
+        steps.append({'command':'select.range','params':{'anchor':pos,'focus':pos}})
+    for row in range(len(rows)+1):
+        select_cell(row,0)
+        steps.append({'command':'table.properties','params':{'allowBreak':False}})
+    for column,width in enumerate([250,45,75,81]):
+        select_cell(0,column)
+        steps.append({'command':'table.columnWidth','params':{'width':width}})
+        if column:
+            steps.extend([{'command':'table.selectColumn','params':{}},{'command':'para.align','params':{'value':'right'}}])
     plan.update(total=format(total,'.2f'),currency=data['currency'],itemCount=len(items),taxOrDiscountAutomaticallyAdded=False)
     return plan
 

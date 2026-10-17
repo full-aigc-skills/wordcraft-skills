@@ -20,6 +20,34 @@
         }
       ],
       "reuse": "workflow facts only; original Craft parameters and calculations"
+    },
+    {
+      "repository": "storytold/wordcraft",
+      "commit": "fc41918814f62645b6746ed68e71e8c2c2e85d6f",
+      "license": null,
+      "readFiles": [
+        {
+          "path": "crates/engine/src/cmd/caret.rs",
+          "url": "https://github.com/storytold/wordcraft/blob/fc41918814f62645b6746ed68e71e8c2c2e85d6f/crates/engine/src/cmd/caret.rs",
+          "sha256": "f4c30f8756af553ae0d32915ee6540a2988be43968ed21c2ddce000e562ad3df"
+        },
+        {
+          "path": "crates/engine/src/cmd/table.rs",
+          "url": "https://github.com/storytold/wordcraft/blob/fc41918814f62645b6746ed68e71e8c2c2e85d6f/crates/engine/src/cmd/table.rs",
+          "sha256": "26e7c2a6471ba27efbd2ecf5110ce717f8a1bea9ba97be2c23528b12b41025a6"
+        },
+        {
+          "path": "crates/engine/src/cmd/mod.rs",
+          "url": "https://github.com/storytold/wordcraft/blob/fc41918814f62645b6746ed68e71e8c2c2e85d6f/crates/engine/src/cmd/mod.rs",
+          "sha256": "1a9f413f6435f898d600c02fe536ebddfbe65193ae52de422990ac4044c282f7"
+        },
+        {
+          "path": "crates/doc/src/lib.rs",
+          "url": "https://github.com/storytold/wordcraft/blob/fc41918814f62645b6746ed68e71e8c2c2e85d6f/crates/doc/src/lib.rs",
+          "sha256": "b0a1e8e4d006bee73c6b6a879e64ee1eb6147f79ab8646c8c26e644685c9474d"
+        }
+      ],
+      "reuse": "actual Pos schema and caret-row property behavior; original automation, no upstream source copied"
     }
   ]
 }
