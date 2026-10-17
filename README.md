@@ -33,4 +33,4 @@
 
 ## 商业报价单开发候选
 
-新增 [wordcraft-quotation](skills/wordcraft-quotation/SKILL.md)：从实际报价数据计算逐项金额和合计，生成原生可编辑表格、DOCX与PDF，拒绝不一致总额和非法输入；税费、币种和交付约定按用户明确资料填写。macOS中文两项样例已检查，Windows与共享编辑器待验收。
+新增 [wordcraft-quotation](skills/wordcraft-quotation/SKILL.md)：从实际报价数据计算逐项金额和合计，生成原生可编辑表格、DOCX与PDF，拒绝不一致总额和非法输入；税费、币种和交付约定按用户明确资料填写。macOS及Windows三组原生样例通过，Codex限定两项报价与局部改价同画面验证通过；其他宿主与发布验收待完成。
