@@ -44,14 +44,19 @@ def compile_template(template, values, allow_incomplete=False):
     paragraph(resolved['title'], 'para.heading1', True)
     paragraph('日期：' + resolved['document_date'] + '    编写：' + resolved['author'])
     if missing:
-        paragraph('资料不完整草稿；待确认：' + '、'.join(missing))
+        paragraph('资料不完整草稿；待确认：' + '、'.join(fields[name].get('label',name) for name in missing))
     for section in template['sections']:
         paragraph(section['title'], 'para.heading2')
         paragraph(resolved[section['field']])
     paragraph(template['table']['title'], 'para.heading2')
-    table_text = '\n'.join('\t'.join(row) for row in [template['table']['headers'], *resolved[template['table']['field']]])
+    table_rows = [template['table']['headers'], *resolved[template['table']['field']]]
+    table_text = '\n'.join('\t'.join(row) for row in table_rows)
     add('para.normal')
-    add('text.insert', text=table_text)
+    # text.insert中的换行是软换行；表格转换需要真实段落作为行边界。
+    for index, row in enumerate(table_rows):
+        add('text.insert', text='\t'.join(row))
+        if index < len(table_rows)-1:
+            add('text.newParagraph')
     add('select.text', text=table_text)
     add('table.fromText', separator='tab')
     add('table.autofit', mode='window')

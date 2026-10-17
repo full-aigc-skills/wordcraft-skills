@@ -9,6 +9,7 @@ class TemplateValidation(unittest.TestCase):
     def setUp(self):
         self.template={'id':'fixture','fields':{k:{'type':'text','required':True} for k in ['title','document_date','author','body']},'sections':[{'title':'事实','field':'body'}],'table':{'title':'行动','headers':['事项','负责人'],'field':'actions'}}
         self.template['fields']['actions']={'type':'rows','required':True}
+        self.template['fields']['body']['label']='工作内容'
         self.values={'title':'周报','document_date':'2026-10-17','author':'甲','body':'已完成一项','actions':[['复核','乙']]}
     def test_whitespace_required_field_is_missing(self):
         self.values['body']='   '
@@ -17,6 +18,7 @@ class TemplateValidation(unittest.TestCase):
         del self.values['body']
         result=m.compile_template(self.template,self.values,True)
         self.assertEqual(result['missingFields'],['body'])
+        self.assertIn('工作内容',str(result['steps']))
         self.assertIn('待确认',str(result['steps']))
     def test_unknown_keys_rejected(self):
         self.values['invoice']='wrong template'
@@ -34,6 +36,8 @@ class TemplateValidation(unittest.TestCase):
         self.assertNotIn('select.all',[s['command'] for s in steps])
         selected=next(s['params']['text'] for s in steps if s['command']=='select.text')
         self.assertEqual(selected,'事项\t负责人\n复核\t乙')
+        rows=[s['params']['text'] for s in steps if s['command']=='text.insert' and '\t' in s['params']['text']]
+        self.assertEqual(rows,['事项\t负责人','复核\t乙'])
         pos=next(i for i,s in enumerate(steps) if s['params'].get('text')==self.values['body'])
         self.assertEqual(steps[pos-2]['command'],'para.normal')
 
