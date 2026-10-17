@@ -50,14 +50,16 @@ def compile_template(template, values, allow_incomplete=False):
         paragraph(resolved[section['field']])
     paragraph(template['table']['title'], 'para.heading2')
     table_rows = [template['table']['headers'], *resolved[template['table']['field']]]
-    table_text = '\n'.join('\t'.join(row) for row in table_rows)
     add('para.normal')
     # text.insert中的换行是软换行；表格转换需要真实段落作为行边界。
     for index, row in enumerate(table_rows):
         add('text.insert', text='\t'.join(row))
         if index < len(table_rows)-1:
             add('text.newParagraph')
-    add('select.text', text=table_text)
+    # select.text只在单个段落内查找，不能选择多行表格。
+    add('caret.docEnd', extend=False)
+    for _ in table_rows:
+        add('caret.paraUp', extend=True)
     add('table.fromText', separator='tab')
     add('table.autofit', mode='window')
     add('table.repeatHeader')

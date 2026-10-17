@@ -34,8 +34,8 @@ class TemplateValidation(unittest.TestCase):
         result=m.compile_template(self.template,self.values)
         steps=result['steps'];self.assertEqual(result['state'],'READY_FOR_REVIEW')
         self.assertNotIn('select.all',[s['command'] for s in steps])
-        selected=next(s['params']['text'] for s in steps if s['command']=='select.text')
-        self.assertEqual(selected,'事项\t负责人\n复核\t乙')
+        self.assertEqual(sum(s['command']=='caret.paraUp' for s in steps),2)
+        self.assertNotIn('select.text',[s['command'] for s in steps])
         rows=[s['params']['text'] for s in steps if s['command']=='text.insert' and '\t' in s['params']['text']]
         self.assertEqual(rows,['事项\t负责人','复核\t乙'])
         pos=next(i for i,s in enumerate(steps) if s['params'].get('text')==self.values['body'])

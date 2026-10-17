@@ -75,14 +75,6 @@
       "params": "{}",
       "shortcut": "Mod+Alt+2"
     },
-    "select.text": {
-      "id": "select.text",
-      "label": "Select Text",
-      "location": "Navigation",
-      "mutates": false,
-      "params": "{\"text\": string, \"occurrence\"?: n}",
-      "shortcut": ""
-    },
     "table.fromText": {
       "id": "table.fromText",
       "label": "Convert Text to Table",
@@ -130,6 +122,22 @@
       "mutates": true,
       "params": "{\"headerRow\"?: bool, \"totalRow\"?: bool, \"bandedRows\"?: bool, \"firstColumn\"?: bool, \"lastColumn\"?: bool, \"bandedColumns\"?: bool}",
       "shortcut": ""
+    },
+    "caret.docEnd": {
+      "id": "caret.docEnd",
+      "label": "Document End",
+      "location": "Navigation",
+      "mutates": false,
+      "params": "{\"extend\"?: bool}",
+      "shortcut": "Mod+End"
+    },
+    "caret.paraUp": {
+      "id": "caret.paraUp",
+      "label": "Paragraph Up",
+      "location": "Navigation",
+      "mutates": false,
+      "params": "{\"extend\"?: bool}",
+      "shortcut": "Mod+Up / Alt+Up"
     }
   }
 }
