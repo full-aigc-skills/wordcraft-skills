@@ -21,3 +21,7 @@ license: Apache-2.0
 独立CLI语法：`wordcraft-cli run --cmd <id=JSON> --save output.docx`。每个 `--cmd` 的值为方法ID、等号、JSON对象组成的一个argv参数。把整组步骤放在同一次run，避免光标、当前表格、图形选择丢失。使用0.7.0原生CLI命令目录作为观察依据；执行前查询实际版本和schema。保存后新进程重开，检查内容、公式或对象；导出格式另行检查。
 
 [结构化步骤](references/recipes.json)含测试输入的可观察断言；[命令证据](references/command-evidence.json)证明方法在固定运行时被观察，不证明场景效果已验收。[来源与许可](references/sources.json)记录借鉴的GitHub工作流事实，正文与参数例子为原创适配，没有执行外部Office脚本。
+
+## 技能商店场景经验
+
+遇到编号是文档结构、正文与节布局分开处理、修订副本保留上下文时，读取[商店工作流适配](references/market-workflows.md)，使用对应的Craft方法和实际结果检查。上游技能不作为运行依赖。
