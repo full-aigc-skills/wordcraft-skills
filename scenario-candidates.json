@@ -57,6 +57,10 @@
     {
       "name": "wordcraft-landscape-appendix",
       "sha256": "e9125ee4464f7e2ac94ad866b8654a0ecefd7b15389877cfbcc808b5e6e2592f"
+    },
+    {
+      "name": "wordcraft-quotation",
+      "sha256": "f7b3bd5b46e0ba1698b67167fc9caf41f93cc3a0c2c4750e401cdf30cf5bccac"
     }
   ]
 }
